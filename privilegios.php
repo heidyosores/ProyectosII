@@ -440,20 +440,30 @@
 
     <script>
         $('.editbtn').on('click',function () {
+            //alert("sada;;;d");
+            //console.log("ddddddd");
             $tr=$(this).closest('tr');
+            //console.log("ssssss", $tr);
             var datos=$tr.children("td").map(function (){
                 return $(this).text();
             });
-            $('#update_id').val(datos[0]);
-            $('#codigo').val(datos[1]);
-            $('#cate').val(datos[2]);
-            $('#descripcion').val(datos[3]);
-            $('#cantidad').val(datos[4]);
-            $('#precio_ini').val(datos[5]);
-            $('#precio_fin').val(datos[6]);
+            //console.log(datos[1]);
+            //$('#update_id').val(datos[0]);
+            $('#nombre').val(datos[1]);
+            $('#direc').val(datos[2]);
+            $('#prof').val(datos[3]);
+            $('#telef').val(datos[4]);
+            $('#login').val(datos[5]);
+            $('#pass').val("");
+            //$('#precio_fin').val(datos[6]);
         });
     </script>
-
+    <script>
+        $('#insertar').on('shown.bs.modal', function (e) {
+            $("input[name=login]").val("");
+            $("input[name=pass]").val("");
+        });
+    </script>
     <script>
         $('.deletebtn').on('click',function () {
             $tr=$(this).closest('tr');

@@ -102,7 +102,8 @@ $long = $_POST["lon"];
 
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWHeg2tCKuZAIDU4vAFdBxzvIUrAFVq5A&callback=iniciarMap"></script>
+  
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUOJDtovvrqNqvPnu60Pc0BgQjo45Tce0&callback=iniciarMap"></script>
 
 </body>
 
